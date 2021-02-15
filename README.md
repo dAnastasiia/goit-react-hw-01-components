@@ -1,4 +1,4 @@
-# Create React App
+// Create React App
 
 1. npx create-react-app имя-папки-проекта или npx create-react-app . (в текущей
    папке, должна быть пустой)
@@ -6,7 +6,7 @@
 
 3. npm start
 
-===== Стилизация =====
+// Стилизация
 
 4. npm install --save-dev prettier husky lint-staged
 5. Cоздаем файлы .prettier, .huskyrc, .lintstagedrc (ESLint)
@@ -24,7 +24,7 @@
 7. npm install modern-normalize
 8. npm install node-sass --save
 
-==== Деплой ====
+// Деплой
 
 Доки https://create-react-app.dev/docs/deployment#github-pages
 
@@ -37,7 +37,7 @@
 
 11. npm run deploy
 
-==== Настройка абсолютного импорта ====
+// Настройка абсолютного импорта
 
 12. Назначение папки, относительно которой задается путь
     https://create-react-app.dev/docs/importing-a-component/#absolute-imports
