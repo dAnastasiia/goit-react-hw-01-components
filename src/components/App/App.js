@@ -1,7 +1,9 @@
 import React from 'react';
 import user from '../../data/user.json';
-import Profile from '../Profile/Profile';
+import statisticalData from '../../data/statistical-data.json';
 import Container from '../Container/Container';
+import Profile from '../Profile/Profile';
+import Statistics from '../Statistics/Statistics';
 
 const App = () => {
   return (
@@ -14,6 +16,8 @@ const App = () => {
           avatar={user.avatar}
           stats={user.stats}
         />
+
+        <Statistics statisticalData={statisticalData} />
       </Container>
     </>
   );
