@@ -16,9 +16,9 @@ th {
   padding: 10px;
 }
 
-tr:hover,
-tr:focus,
-tr:active {
+tbody > tr:hover,
+tbody > tr:focus,
+tbody > tr:active {
   background-color: rgba(199, 209, 198, 0.3);
 }
 
