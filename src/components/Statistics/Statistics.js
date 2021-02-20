@@ -2,13 +2,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './Statistics.module.css';
 
-const Statistics = ({ statisticalData }) => {
+const Statistics = ({ title, stats }) => {
   return (
     <section className={styles.statistics}>
-      <h2 className={styles.title}>Upload stats</h2>
+      {title && <h2 className={styles.title}>{title}</h2>}
 
       <ul className={styles.statslist}>
-        {statisticalData.map(({ id, label, percentage }) => {
+        {stats.map(({ id, label, percentage }) => {
           return (
             <li className={styles.item} key={id}>
               <span className={styles.label}>{label}</span>
@@ -21,8 +21,13 @@ const Statistics = ({ statisticalData }) => {
   );
 };
 
+Statistics.defaultProps = {
+  title: '',
+};
+
 Statistics.propTypes = {
-  statisticalData: PropTypes.arrayOf(
+  title: PropTypes.string,
+  stats: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,
       label: PropTypes.string.isRequired,
